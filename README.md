@@ -1,8 +1,21 @@
 ## Overview
-Repository creates for fast running development process with configuration, which are the same from project to project.
+Spring-boot based file storage that uses PostgreSQL for metadata storage and MinIO for file storage.
 
 ## Building
-...
+The services can be run on the background with command:
+```bash
+docker-compose up -d
+```
+
+Stopping all the running containers is also simple with a single command:
+```bash
+docker-compose down
+```
+
+If you need to stop and remove all containers, networks, and all images used by any service in <em>docker-compose.yml</em> file, use the command:
+```bash
+docker-compose down --rmi all
+```
 
 ## Troubleshooting
 ...
